@@ -16,7 +16,7 @@
     <div class="container py-5">
       <div class="shadow py-3">
         <h1 class="text-center">
-          Top 75+ JavaScript Interview <br />
+          Top JavaScript Interview <br />
           Questions And Answers [2022]
         </h1>
         <hr />
@@ -94,60 +94,260 @@
             rules to create Javascript engines.
           </p>
           <h2>5. What are different versions of ECMAScript?</h2>
+          <div class="row">
+            <div class="col-6">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col-6">Version</th>
+                    <th scope="col-6">Description and Release</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ES1</td>
+                    <td>June 1997</td>
+                  </tr>
+                  <tr>
+                    <td>ES2</td>
+                    <td>June 1998</td>
+                  </tr>
+                  <tr>
+                    <td>ES3</td>
+                    <td>June 1999</td>
+                  </tr>
+                  <tr>
+                    <td>ES4</td>
+                    <td>Abandoned</td>
+                  </tr>
+                  <tr>
+                    <td>ES5</td>
+                    <td>December 2009</td>
+                  </tr>
+                  <tr>
+                    <td>ES6</td>
+                    <td>June 2015 (ES2015)</td>
+                  </tr>
+                  <tr>
+                    <td>ES7</td>
+                    <td>June 2016 (ES2016)</td>
+                  </tr>
+                  <tr>
+                    <td>ES8</td>
+                    <td>June 2017 (ES2017)</td>
+                  </tr>
+                  <tr>
+                    <td>ES9</td>
+                    <td>June 2018 (ES2018)</td>
+                  </tr>
+                  <tr>
+                    <td>ES10</td>
+                    <td>June 2019 (ES2019)</td>
+                  </tr>
+                  <tr>
+                    <td>ES11</td>
+                    <td>June 2020 (ES2020)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-6"></div>
+          </div>
+          <h2>6. What are features of ES6?</h2>
+          <p>Here is the list of ES6 features.</p>
+          <ul>
+            <li>let and const Keywords</li>
+            <li>Arrow Functions</li>
+            <li>Default Parameters</li>
+            <li>Template Strings</li>
+            <li>Destructuring Assignment</li>
+            <li>Enhanced Object Literals</li>
+            <li>Rest Parameters</li>
+            <li>Spread Operator</li>
+            <li>Promises</li>
+            <li>Classes</li>
+            <li>Modules</li>
+          </ul>
+
+          <h2>7. What are scopes in Javascript?</h2>
+          <p>
+            The scope refers to the current execution context. It specifies the
+            accessibility of variables and functions. There are three scopes in
+            Javascript.
+          </p>
+          <ol>
+            <li>Global scope</li>
+            <li>Function scope</li>
+            <li>Block scope</li>
+          </ol>
+          <h2>8. Difference between let, var, and const</h2>
           <table class="table">
             <thead>
               <tr>
-                <th scope="col-6">Version</th>
-                <th scope="col-6">Description and Release</th>
+                <th scope="col">var</th>
+                <th scope="col">let</th>
+                <th scope="col">const</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>ES1</td>
-                <td>@mdo</td>
+                <td>Available from the beginning.</td>
+                <td>Introduced in ES6.</td>
+                <td>Introduced in ES6.</td>
               </tr>
               <tr>
-                <td>ES2</td>
-                <td>@fat</td>
+                <td>Global as well as function scoped.</td>
+                <td>Block scoped.</td>
+                <td>Block scoped.</td>
               </tr>
               <tr>
-                <td>ES3</td>
-                <td>@twitter</td>
+                <td>Can re-declare and update.</td>
+                <td>Cannot re-declare but it can be updated</td>
+                <td>Neither re-declare nor update.</td>
               </tr>
               <tr>
-                <td>ES4</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES5</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES6</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES7</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES8</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES9</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES10</td>
-                <td>@twitter</td>
-              </tr>
-              <tr>
-                <td>ES11</td>
-                <td>@twitter</td>
+                <td>Hoisted and initialized to undefined.</td>
+                <td>Hoisted but not initialized.</td>
+                <td>Hoisted but not initialized.</td>
               </tr>
             </tbody>
           </table>
+          <h2>9. Which one should we use between let, var, and const?</h2>
+          <ul>
+            <li>Always declare variables with the <b>const</b> keyword.</li>
+            <li>
+              If the value of a variable is going to change in the future, then
+              declare it with the <b>let</b> keyword.
+            </li>
+            <li>Avoid using the <b>var</b> keyword.</li>
+          </ul>
+
+          <h2>10. What is Temporal Dead Zone?</h2>
+          <p>
+            The Temporal Dead Zone is the behavior of Javascript where the state
+            of a variable is not reachable. It only happens when we declare a
+            variable with the let and const keyword. Accessing a variable with
+            let and const before its declaration causes the Reference Error.
+          </p>
+
+          <h2>11. What is hoisting?</h2>
+          <p>
+            The hoisting is the process of moving variable and function
+            declarations to the top of the scope. Javascript only hoists
+            declaration. It does not hoist initializations.
+          </p>
+
+          <h2>12. Whether Javascript is object-oriented or object-based?</h2>
+          <p>
+            Javascript is object-based in nature. Because it does not support
+            polymorphism. Polymorphism consists of method overloading and method
+            overriding. There is no concept of overloading or overriding in
+            Javascript. The default behavior of Javascript is to overwrite the
+            function. Hence Javascript is an object-based programming language.
+          </p>
+          <hr />
+        </div>
+        <h2 class="bg-success text-white p-3">
+          Javascript interview questions on asynchronous operations
+        </h2>
+        <div class="p-5">
+          <h2>13. Is Javascript synchronous or asynchronous?</h2>
+          <p>
+            Javascript is synchronous and blocking in nature. Synchronous means
+            to execute code in sequence. It does not execute the next block of
+            code until and unless the execution of earlier code.
+          </p>
+
+          <h2>14. How does Javascript execute asynchronous code?</h2>
+          <p>
+            Javascript uses callbacks, promises and async/await to execute
+            asynchronous code.
+          </p>
+
+          <h2>15. What is callback?</h2>
+          <p>
+            The callback is a function passed to another function as an
+            argument. This passed function executes later. Usually, callbacks
+            achieve asynchronous operations in Javascript.
+          </p>
+          <img src="img/CallBack.png" alt="" />
+          <h2>16. What is callback hell?</h2>
+          <p>
+            The callback hell happens when we use multiple nested callbacks.
+            This problem occurs for dependent asynchronous operations (where we
+            need to wait for the result of the previous asynchronous call).
+          </p>
+
+          <img src="img/callBackHell.png" alt="" />
+          <h2>17. How can we avoid callback hell?</h2>
+          <p>
+            We can avoid the callback hell problem by using promise and
+            async-await.
+          </p>
+
+          <h2>18. What is promise?</h2>
+          <p>
+            The promise is useful to achieve asynchronous programming in
+            Javascript. It is an object representing the completion or failure
+            of an asynchronous operation.
+          </p>
+
+          <p>
+            The promise was introduced in ES6. It was introduced to overcome the
+            limitations caused by the callback. The promise is useful for single
+            as well as multiple asynchronous operations.
+          </p>
+
+          <h2>19. What are the states of promise?</h2>
+          <p>A promise can be in one of these states:</p>
+          <ul>
+            <li>
+              <b>Pending:</b> initial state, neither fulfilled nor rejected.
+            </li>
+            <li>
+              <b>Fulfilled:</b> meaning that the operation completes
+              successfully.
+            </li>
+            <li><b>Rejected:</b> meaning that the operation failed.</li>
+          </ul>
+
+          <h2>20. What is promise chaining?</h2>
+          <p>
+            Promise chaining means passing a promise to another promise.
+            Sometimes, we have to make an asynchronous call based on the result
+            of the previous asynchronous call. For this purpose, we can use
+            promise chaining. We can achieve the promise chaining by using
+            <b>promise instance methods</b> (then(), catch(), and finally()).
+          </p>
+
+          <img src="img/promise.png" alt="" />
+          <h2>
+            21. How can we achieve multiple parallel asynchronous requests using
+            promise?
+          </h2>
+          <p>
+            Sometimes we need to call multiple requests on a single page. We can
+            achieve this by sending requests in parallel. The promise provides
+            some helpful methods to work with parallel requests. Here is the
+            list of methods.
+          </p>
+          <ul>
+            <li>all()</li>
+            <li>allSettled()</li>
+            <li>any()</li>
+            <li>race()</li>
+          </ul>
+
+          <h2>22. What is async and await?</h2>
+          <p>
+            The async keyword with a function represents that function as
+            asynchronous. The async function returns the promise. Await keyword
+            is used to represent the asynchronous operation inside the async
+            function.
+          </p>
+
+          <p>The async and await is syntactic sugar over the promise.</p>
+          <img src="img/async.png" alt="" />
         </div>
       </div>
     </div>
