@@ -247,6 +247,7 @@
           </p>
           <hr />
         </div>
+        <hr />
         <h2 class="bg-success text-white p-3">
           Javascript interview questions on asynchronous operations
         </h2>
@@ -348,6 +349,667 @@
 
           <p>The async and await is syntactic sugar over the promise.</p>
           <img class="w-100" src="img/async.png" alt="" />
+
+          <h2>23. Difference between Promise and Callback</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Callback</th>
+                <th scope="col">Promise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  The callback is a function passed to another function as an
+                  argument.
+                </td>
+                <td>
+                  A promise is an object representing the completion or failure
+                  of an asynchronous operation.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It suffers from a callback hell problem for sequential
+                  asynchronous calls.
+                </td>
+                <td>
+                  We can use promise chaining for sequential asynchronous code.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It is difficult to use callback for parallel asynchronous
+                  calls.
+                </td>
+                <td>
+                  It provides different methods to work with parallel multiple
+                  requests.
+                </td>
+              </tr>
+              <tr>
+                <td>Error handling is complex.</td>
+                <td>Error handling is easy.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>
+            24. Which one is better between callback, promise and async-await?
+          </h2>
+
+          <p>
+            The callback is the old way to handle asynchronous operations. The
+            promise provides a better way to handle asynchronous operations. It
+            provides different methods.
+          </p>
+          <p>
+            Async and await is the syntactic sugar over the promise. It provides
+            a way to write asynchronous code in a synchronous way. In modern
+            applications, a lot of developers prefer async and await since it is
+            easy to write and maintain.
+          </p>
+        </div>
+        <h2 class="bg-success text-white p-3">
+          Javascript interview questions on functions
+        </h2>
+        <div class="p-5">
+          <h2>25. What is closure?</h2>
+          <p>
+            The closure is a function declared inside another function. The
+            inner function has access to the outer function’s variables and
+            parameters. The outer function should return an inner function to
+            the outside world.
+          </p>
+
+          <p>
+            Generally, closures were useful to achieve encapsulation in
+            JavaScript before the introduction of class.
+          </p>
+
+          <img src="./img/closure.png" alt="" class="w-100" />
+          <h2>26. What is an anonymous function?</h2>
+          <p>
+            An anonymous function is a function without a name. Mostly, it is
+            useful for three purposes.
+          </p>
+
+          <p>
+            We can store an anonymous function in a variable. It can be passed
+            as an argument to another function. Similarly, we can return an
+            anonymous function from a function.
+          </p>
+          <h2>27. What is a function expression?</h2>
+          <p>
+            It is possible to store a function into a variable in Javascript.
+            The entire term is known as a function expression. We can call the
+            variable to execute the stored function.
+          </p>
+
+          <img src="./img/function expression.png" alt="" class="w-100" />
+          <h2>28. What is an arrow function?</h2>
+          <p>
+            An arrow function is a just syntactic sugar over function
+            expression. It is also termed a fat arrow function. It is the
+            shortest syntax to declare a function.
+          </p>
+
+          <img class="w-100" src="./img/arrow function.png" alt="" />
+          <h2>29. What is first-class function?</h2>
+          <p>
+            A programming language is said to have a first-class function if the
+            function in that language is treated like any other variable. In
+            such a language, we can pass the function to another function
+            (callback). We can store a function into a variable. Moreover, we
+            can return a function from another function (closure).
+          </p>
+          <h2>30. What is first-order function?</h2>
+          <p>
+            A first-order function is a function that doesn’t accept another
+            function as an argument. As well as it doesn’t return a function.
+          </p>
+
+          <img class="w-100" src="./img/order-fun.png" alt="" />
+          <h2>31. What is higher-order function?</h2>
+          <p>
+            The higher-order function accepts a function as an argument. Besides
+            that, it also returns the function as a value.
+          </p>
+
+          <img class="w-100" src="./img/high-order-fun.png" alt="" />
+          <h2>32. What is unary function?</h2>
+          <p>
+            A unary function is a function that accepts exactly one parameter.
+          </p>
+          <img class="w-100" src="./img/unary-fun.png" alt="" />
+          <h2>33. What is pure function?</h2>
+          <p>
+            A pure function is a function that returns the same output over the
+            input. It never mutates the global variables. A pure function never
+            modifies the global state of variables or any other data members. It
+            only depends on the input arguments of the function.
+          </p>
+
+          <img class="w-100" src="./img/pure-Fun.png" alt="" />
+          <p>Some common terminologies for the pure function are:</p>
+          <ul>
+            <li>
+              A function that doesn’t modify the existing memory location is
+              called pure function.
+            </li>
+            <li>
+              A function that doesn’t modify the actual parameter is called pure
+              function.
+            </li>
+            <li>
+              A mutation is a bad thing. So never modify the actual parameter of
+              the function.
+            </li>
+          </ul>
+
+          <h2>34. What is IIFE?5</h2>
+          <p>
+            IIFE stands for Immediately Invoked Function Expression. It starts
+            its execution immediately after the definition. There is a general
+            rule in JavaScript. Never pollute a global scope. Writing function
+            in global scope is not a good thing. IIFE creates a function in a
+            local scope.
+          </p>
+
+          <p>
+            IIFE prevents access of variables to the outside world. It also
+            prevents pollution of the global scope. Here is an example of IIFE.
+          </p>
+
+          <img class="w-100" src="./img/iife-fun.png" alt="" />
+          <h2>35. What is currying function?</h2>
+          <p>
+            Currying is the process of converting a function with n arguments
+            into n number of functions.
+          </p>
+          <img class="w-100" src="./img/currying-fun.png" alt="" />
+          <h2>36. What is nested function?</h2>
+          <p>
+            The nested function is a function that is defined inside another
+            function.
+          </p>
+
+          <img class="w-100" src="./img/nasted-fun.png" alt="" />
+          <h2>37. What is ‘this’ keyword in JavaScript?</h2>
+          <p>
+            Javascript runtime sets the context for each function. The context
+            is identified by using this keyword. The this keyword refers to the
+            context where the function is called. It does not belong to the
+            context where the function was created.
+          </p>
+
+          <p>
+            In an arrow function, this always points to the current surrounding
+            context. It means where the function is created. We cannot change
+            the context of an arrow function.
+          </p>
+
+          <h2>38. What is call() method?</h2>
+          <p>
+            We can change the context of the function using the call() method.
+            We can explicitly specify where this should refer to.
+          </p>
+
+          <img class="w-100" src="./img/call.png" alt="" />
+          <h2>39. What is apply() method?</h2>
+          <p>
+            We can use apply() method to change the context of function similar
+            to like call() method. The only difference is we can pass the
+            parameters as an array.
+          </p>
+
+          <img class="w-100" src="./img/apply.png" alt="" />
+          <h2>40. What is bind() method?</h2>
+          <p>
+            The bind() method is also useful to change the context of a
+            function. It was introduced in ES5. The bind() method does not
+            execute the function immediately. Instead, it returns a new function
+            with the context.
+          </p>
+
+          <img class="w-100" src="./img/bind.png" alt="" />
+
+          <h2>41. What is the difference between Call, Apply and Bind?</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Call()</th>
+                <th scope="col">Apply()</th>
+                <th scope="col">Bind()</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Changes the context of a function (this).</td>
+                <td>Changes the context of a function (this).</td>
+                <td>Changes the context of a function (this).</td>
+              </tr>
+              <tr>
+                <td>Introduced in ES3.</td>
+                <td>Introduced in ES3.</td>
+                <td>Introduced in ES5.</td>
+              </tr>
+              <tr>
+                <td>Parameters can be passed as comma-separated.</td>
+                <td>Parameters can be passed as an array.</td>
+                <td>Parameters can be passed as comma-separated.</td>
+              </tr>
+              <tr>
+                <td>Executes the function immediately.</td>
+                <td>Executes the function immediately.</td>
+                <td>
+                  Does not execute the function immediately. Instead, return a
+                  new function.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr />
+        <h2 class="bg-success text-white p-3">
+          Javascript interview questions on ES6 features
+        </h2>
+        <div class="p-5">
+          <h2>42. What is class in Javascript?</h2>
+          <p>
+            The class is a template to create objects. The class is a special
+            function in Javascript. Basically, it is the syntactic sugar over
+            function prototype. It is introduced in ES6.
+          </p>
+
+          <h2>43. How to create private members in class?</h2>
+          <p>
+            The class members are public by default. We can create private class
+            members by using the hash (#) prefix.
+          </p>
+          <img src="./img/privated member.png" alt="" class="w-100" />
+          <h2>44. How to create static members in class?</h2>
+          <p>
+            We can create static properties and methods in class using the
+            static keyword. We can access static members by using this:
+            className.property or className.method.
+          </p>
+          <img src="./img/static member.png" alt="" class="w-100" />
+          <h2>45. What is template string?</h2>
+          <p>
+            We can write string using backticks () in Javascript. It provides a
+            better way to write multiline strings. Moreover, we can insert a
+            variable inside it using the ${} syntax.
+          </p>
+          <img src="./img/template-string.png" alt="" class="w-100" />
+          <h2>46. What are default parameters?</h2>
+          <p>
+            Default parameters allow us to initialize function parameters to
+            default values. They were introduced in ES6. We had to use the
+            logical OR operator for default values prior to default parameters.
+          </p>
+
+          <img src="./img/deful-parameter.png" alt="" class="w-100" />
+          <h2>47. What is spread operator?</h2>
+          <p>
+            The spread operator expands iterables (array, object, string) into a
+            single value. Here is a list of uses of the spread operator.
+          </p>
+          <ul>
+            <li>Spreading arrays, objects, and strings into single value.</li>
+            <li>Copying an array.</li>
+            <li>Concatenating arrays.</li>
+            <li>Spreading element on function call.</li>
+          </ul>
+          <img src="./img/spread.png" alt="" class="w-100" />
+          <h2>48. What is rest parameter?</h2>
+          <p>
+            Rest parameter is an improved version of handling function
+            parameters. We can pass any number of parameters to a function.
+            These parameters can be accessed like an array.
+          </p>
+
+          <img src="./img/rest.png" alt="" class="w-100" />
+          <h2>49. What is array destructuring?</h2>
+        </div>
+        <hr />
+        <h2 class="bg-success text-white p-3">
+          Javascript interview questions for frontend
+        </h2>
+        <div class="p-5">
+          <h2>50. What is event bubbling?</h2>
+          <p>
+            The event bubbling is the type of event propagation. In such a case,
+            when we trigger the event of the innermost element, it successively
+            triggers the event of all the parent elements till the outermost
+            parent.
+          </p>
+
+          <h2>51. What is event capturing?</h2>
+          <p>
+            Event capturing is the type of event propagation. In such a case,
+            when we trigger the event of the outermost element, it successively
+            triggers the event of all the child elements till the innermost
+            child.
+          </p>
+
+          <h2>52. What is DOM?</h2>
+          <p>
+            The DOM stands for Document Object Model. The DOM defines a standard
+            for accessing documents.
+          </p>
+
+          <p>It defines:</p>
+          <ul>
+            <li>The HTML elements as objects.</li>
+            <li>The properties of all HTML elements.</li>
+            <li>The methods to access all HTML elements.</li>
+            <li>The events for all HTML elements.</li>
+          </ul>
+
+          <h2>53. What is difference between document and window?</h2>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Window</th>
+                <th scope="col">Document</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>It is the root element in the web page.</td>
+                <td>
+                  It is a direct child element of a window object. It is also
+                  known as Document Object Model (DOM).
+                </td>
+              </tr>
+              <tr>
+                <td>We can access it using the window keyword.</td>
+                <td>We can access it using window.document or document.</td>
+              </tr>
+              <tr>
+                <td>It provides methods like alert(), confirm(), etc.</td>
+                <td>
+                  It provides methods like getElemenetById(), createElement(),
+                  etc.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>54. What is cookie?</h2>
+          <p>
+            The cookie refers to just the textual information about a website.
+            It is used to remember the user information.
+          </p>
+
+          <h2>55. What is session storage?</h2>
+          <p>
+            The session storage can be useful to store information in the
+            browser. The sessionStorage object lets us store the data in
+            key/value pair. It stores the data for one session only.
+          </p>
+
+          <h2>56. What is local storage?</h2>
+          <p>
+            The local storage allows us to store the data in the browser similar
+            to session storage. The local storage data has no expiration time.
+          </p>
+
+          57. What is difference between cookie, session storage, and local
+          storage?
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Cookies</th>
+                <th scope="col">Session storage</th>
+                <th scope="col">Local storage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>It is accessible on the client as well as server-side.</td>
+                <td>It is accessible on the client-side only.</td>
+                <td>It is accessible on the client-side only.</td>
+              </tr>
+              <tr>
+                <td>The storage capacity is 4KB.</td>
+                <td>The storage capacity is 5MB.</td>
+                <td>The storage capacity is 5MB.</td>
+              </tr>
+              <tr>
+                <td>We can add the expiration time.</td>
+                <td>It expires as soon as the tab or browser is closed.</td>
+                <td>The data is not expired till we clear it.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <img src="./img/preventDefault.png" alt="" class="w-100" />
+          <h2>59. How do you access history in Javascript?</h2>
+          <p>
+            The window.history object contains the browser’s history. We can
+            access the history using back() and forward() methods.
+          </p>
+
+          <img src="./img/history.png" alt="" class="w-100" />
+        </div>
+        <hr />
+        <h2 class="bg-success text-white p-3">
+          Miscellaneous Javascript interview questions
+        </h2>
+        <div class="p-5">
+          <h2>60. What is call stack?</h2>
+          <p>
+            The call stack is used to keep track of multiple function calls. It
+            is like a real stack in data structures. We use a call stack to
+            memorize which function is running right now.
+          </p>
+
+          <h2>61. What is event loop?</h2>
+          <p>
+            The event loop is a queue of callback functions. When an async
+            function executes, the callback function is pushed into the queue.
+            The queue places it onto the function execution stack whenever the
+            stack becomes empty.
+          </p>
+          <h2>62. How can we handle exceptions in Javascript?</h2>
+          <p>
+            We can use a try-catch block to handle exceptions in Javascript.
+          </p>
+
+          try { cosnole.log('Hello World'); } catch (error) {
+          console.error(error); // ReferenceError: cosnole is not defined }
+          <h2>63. What is throw keyword?</h2>
+          <p>
+            The throw statement is useful to throw user-defined exceptions. The
+            execution of the code after the throw statement is stopped. And the
+            control is passed to the first catch block.
+          </p>
+
+          try { throw new Error('User defined error'); } catch (error) {
+          console.error(error); // Error: User defined error }
+          <h2>64. What is finally block?</h2>
+          <h2>65. What is JSON?</h2>
+          <p>
+            JSON stands for JavaScript Object Notation. It is a lightweight
+            text-based medium to store and transmit data across networks. It is
+            generally useful for transmitting and storing data in modern
+            applications.
+          </p>
+
+          <h2>66. JSON methods in Javascript</h2>
+          <p>JSON offers two methods to work with it.</p>
+          <ol>
+            <li>
+              parse(): The method converts a JSON string to a corresponding
+              Javascript object or value.
+            </li>
+            <li>
+              stringify(): The method converts a Javascript object or value to a
+              valid JSON string.
+            </li>
+          </ol>
+
+          <h2>67. JSON data types</h2>
+          <p>JSON supports the following data types.</p>
+          <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Null</li>
+            <li>Object</li>
+            <li>Array</li>
+          </ul>
+
+          <h2>68. What is strict mode in Javascript?</h2>
+          <p>
+            Strict mode allows writing code in a strict operating context. We
+            can write secure Javascript code using it. It notifies bad syntax by
+            throwing errors. We can declare strict mode at global as well as
+            function scope.
+          </p>
+
+          "use strict" x = 3.14; // ReferenceError: x is not defined
+          <h2>69. What is NaN?</h2>
+          <p>
+            NaN stands for Not a Number. It represents a value that is not a
+            valid number. We get this value whenever we try to perform
+            mathematical operations on an invalid number.
+          </p>
+
+          <h2>70. What is undefined?</h2>
+          <p>
+            The undefined property indicates that a variable has no value or is
+            not declared at all. The type of undefined is undefined too. We can
+            empty any variable by setting the value to undefined. The function
+            returns undefined if a value is not returned.
+          </p>
+
+          let name; console.log(name); // undefined console.log(typeof name); //
+          undefined
+          <h2>71. What is null?</h2>
+          <p>
+            The null is one of Javascript’s primitive values. It represents the
+            absence of object value. The type of null is Object. We empty a
+            variable by setting the value to null.
+          </p>
+
+          let name = null; console.log(name); // null console.log(typeof name);
+          // object
+          <h2>72. What is difference between undefined and null?</h2>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">undefined</th>
+                <th scope="col">null</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  It indicates that a variable has no value or is not declared
+                  at all.
+                </td>
+                <td>It represents the absence of object value.</td>
+              </tr>
+              <tr>
+                <td>The type of undefined is undefined.</td>
+                <td>The type of null is Object.</td>
+              </tr>
+              <tr>
+                <td>It represents the absence of a value of a variable.</td>
+                <td>It represents the absence of a variable itself.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>73. What is the difference between == and ===?</h2>
+          <p>
+            The == stands for comparison operator. This operator transforms both
+            the operand to the same type before comparison.
+          </p>
+
+          <p>
+            The === stands for strict equality comparison operator. This
+            operator returns false if the operands are not of the same type.
+          </p>
+
+          0 == false // true 0 === false // false, because they are of a
+          different type 1 == "1" // true, automatic type conversion for value
+          only 1 === "1" // false, because they are of a different type null ==
+          undefined // true null === undefined // false '0' == false // true '0'
+          === false // false 74. What is typeof operator? The typeof operator is
+          useful to check the data type of a variable.
+
+          <h2>75. What is call by value?</h2>
+          <p>
+            We can invoke a function in two ways: call by value or call by
+            reference. While invoking a function, we pass values of variables to
+            it. If the function changes the value of the parameter, then this
+            change doe not reflect globally or in the calling function.
+          </p>
+
+          <p>Primitive data types are passed to functions by value.</p>
+
+          <h2>76. What is call by reference?</h2>
+          <p>
+            While invoking a function, we pass the address (reference) of
+            variables to it instead of the actual value. If the function changes
+            the value of the parameter, then this change reflects globally or in
+            the calling function.
+          </p>
+
+          <p>Object data types are passed to function as a reference.</p>
+
+          <h2>77. Shallow copy vs deep copy</h2>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Shallow Copy</th>
+                <th scope="col">Deep Copy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  A shallow copy means copying all the values from the original
+                  variable but still keeping connected to the original variable.
+                </td>
+                <td>
+                  Deep copy means copying all the values from the original
+                  variable and disconnecting.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Certain sub-values can still be connected to original
+                  variables.
+                </td>
+                <td>
+                  It disconnects from the original variable and creates a
+                  separate copy.
+                </td>
+              </tr>
+              <tr>
+                <td>Object data types are shallow copied.</td>
+                <td>Primitive data types are deep copied.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>78. Which memory Javascript uses?</h2>
+          <p>Javascript uses both stack and heap memory.</p>
+
+          <h2>79. Does Javascript use garbage collection?</h2>
+          <p>
+            Yes. javascript uses the garbage collection technique. Once there is
+            no use of variables, they become ready to be garbage collected. It
+            is taken care of by the Javascript engine itself.
+          </p>
         </div>
       </div>
     </div>
